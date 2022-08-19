@@ -39,7 +39,7 @@ const Nav = () => {
             <AiOutlineClose onClick={() => setToggle(false)} />
           </div>
           <ul className='app__flex app__nav-mobile-menu-item'>
-            {["home", "about", "blog", "testimonials", "contact"].map(
+            {["home", "about", "blogs", "testimonials", "contact"].map(
               (item, index) => (
                 <li key={index}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>

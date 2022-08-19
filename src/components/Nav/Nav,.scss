@@ -98,7 +98,8 @@
         svg {
           font-size: 2rem;
           cursor: pointer;
-          color: rgba(0, 0, 0, 0.5);
+          color: #503047;
+          -webkit-text-fill-color: #503047;
         }
       }
       .app__nav-mobile-menu-item {
@@ -108,7 +109,7 @@
           a {
             color: rgba(0, 0, 0, 0.5);
             text-transform: capitalize;
-            font-size: 2rem;
+            font-size: 1.6rem;
           }
         }
       }

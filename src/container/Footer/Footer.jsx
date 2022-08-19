@@ -107,7 +107,7 @@ export const Footer = () => {
       )}
       <p>
         Copyright © {date} All rights reserved | This template is made with{" "}
-        <span style={{ color: "red" }}>♥</span> by{" "}
+        <span>♥</span> by{" "}
         <a
           href='https://nemanjadjordjevicportfolio.netlify.app/'
           target='_blank'
