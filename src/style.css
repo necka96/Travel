@@ -8,6 +8,14 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100% !important;
+  width: 100% !important;
+}
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
