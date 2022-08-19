@@ -20,9 +20,13 @@
 h2 {
   text-transform: uppercase;
   font-family: "Bebas Neue", sans-serif;
-  color: #00000033;
-  -webkit-text-fill-color: #00000033;
+  -webkit-text-fill-color: #503047;
+  color: #503047;
   font-size: clamp(3rem, 10vw, 3.5rem);
+}
+h3 {
+  -webkit-text-fill-color: #503047;
+  color: #503047;
 }
 p {
   -webkit-text-fill-color: rgba(0, 0, 0, 0.5);
