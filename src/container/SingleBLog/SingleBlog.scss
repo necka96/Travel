@@ -1,0 +1,117 @@
+.app__single-blog-holder {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+  }
+  .app__single-blog-socila-icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    svg {
+      width: 40px;
+      height: 30px;
+    }
+  }
+  .app__go-home {
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #44cf6c;
+    color: #fff;
+    justify-content: center;
+    svg {
+      width: 40px;
+      height: 30px;
+    }
+  }
+  .app__single-blog-header {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    h2 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      font-family: "Bebas Neue", sans-serif;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 5px;
+      font-size: 5rem;
+    }
+
+    .app__go-back {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+    }
+  }
+  .app-single-blog-first-image-holder {
+    img {
+      grid-column: span 4;
+    }
+  }
+  .app-single-blog-second-image-holder {
+    img {
+      grid-column: span 4;
+
+      height: 40rem;
+    }
+    & > img:nth-child(odd) {
+      margin-top: 2rem;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .app-single-blog-first-image-holder {
+      img {
+        grid-column: span 12;
+      }
+    }
+    .app-single-blog-second-image-holder {
+      img {
+        grid-column: span 12;
+
+        height: 100%;
+      }
+      & > img:nth-child(odd) {
+        margin-top: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .app-single-blog-first-image-holder {
+      img {
+        width: 90%;
+      }
+    }
+    .app-single-blog-second-image-holder {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.app__loader-holder {
+  width: 100%;
+
+  height: 100vh;
+  justify-content: center;
+  .app__loader {
+    width: 200px;
+    height: 200px;
+    background: #44cf6c;
+    justify-content: center;
+    text-align: center;
+  }
+}

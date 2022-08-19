@@ -1,0 +1,75 @@
+.app__contact {
+  text-align: center;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    color: rgba(0, 0, 0, 0.2) !important;
+    font-size: clamp(1.5rem, 10vw, 2rem);
+  }
+  .app__footer-form {
+    width: 60%;
+    flex-direction: column;
+    margin: 0 auto;
+
+    div {
+      width: 100%;
+      gap: 2rem;
+      margin: 0.75rem 0;
+      border-radius: 10px;
+      cursor: pointer;
+
+      transition: all 0.3s ease-in-out;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.95rem;
+        border: none;
+        border-bottom: 2px solid #503047;
+        background: transparent;
+        font-family: "Roboto", sans-serif;
+        outline: none;
+      }
+
+      textarea {
+        height: 170px;
+        resize: none;
+      }
+
+      &:hover {
+        box-shadow: 0 0.125rem 0.25rem rgba(#000, 0.075);
+      }
+    }
+    button {
+      border: none;
+      outline: none;
+      margin: 2rem 0;
+      cursor: pointer;
+      padding: 1rem 2rem;
+      background: transparent;
+      box-shadow: 0 0.125rem 0.25rem rgba(#000, 0.075);
+      border-radius: 5px;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background: #44cf6c;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  }
+
+  p {
+    padding: 2rem;
+    font-size: 0.9rem;
+
+    color: rgba(0, 0, 0, 0.5);
+    a {
+      font-size: 1.1rem;
+    }
+  }
+}

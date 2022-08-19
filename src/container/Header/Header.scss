@@ -1,0 +1,57 @@
+.app__header {
+  padding: 280px 50px 0;
+  position: relative;
+  height: 80vh;
+  justify-content: center;
+  overflow: hidden;
+  .img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  nav {
+    min-height: 100px;
+
+    .app__header-item {
+      div {
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        font-size: clamp(1rem, 5vw, 1.9rem);
+        font-family: "Bebas Neue", sans-serif;
+        line-height: 1.2rem;
+        transition: all 0.3s ease;
+        margin: 0 10px;
+        cursor: pointer;
+        &:hover,
+        &.active {
+          color: #fff;
+          font-size: clamp(2rem, 10vw, 5rem);
+          line-height: 2.3rem;
+        }
+      }
+      .line {
+        min-width: 20px;
+        width: 100%;
+        height: 2px;
+
+        background-color: rgba(255, 255, 255, 0.3);
+        display: inline-block;
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    padding: 80px 20px 0;
+    .app__header-item {
+      .line {
+        min-width: 5px !important;
+      }
+    }
+  }
+}

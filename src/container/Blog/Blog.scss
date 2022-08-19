@@ -1,0 +1,71 @@
+.app__blogs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .app__blogs-items {
+    gap: 30px;
+    .app__blog {
+      grid-column: span 4;
+      position: relative;
+      box-shadow: 0 0.125rem 0.25rem rgba(#000, 0.075);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: #fff;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      img {
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .app__blog-content {
+        padding: 40px;
+        position: relative;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        .app__blog-header {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 1rem;
+          font-family: "Bebas Neue", sans-serif;
+          justify-self: start;
+          align-self: start;
+          h3 {
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+          }
+        }
+        p {
+          line-height: 1.5rem;
+          font-size: 0.9rem;
+          text-align: justify;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        a {
+          position: absolute;
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+          bottom: 15px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .app__blog {
+      grid-column: span 6 !important;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .app__blog {
+      grid-column: span 12 !important;
+    }
+  }
+}

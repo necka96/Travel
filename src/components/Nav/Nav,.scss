@@ -1,0 +1,117 @@
+.app__nav {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+
+  .app_nav-menu {
+    justify-content: space-between;
+    grid-column: 2 / span 7;
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 700;
+      a {
+        color: #503047;
+        letter-spacing: -2px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          color: #44cf6c;
+        }
+      }
+    }
+    .app__nav-menu-item {
+      li {
+        margin: 0 10px;
+        a {
+          color: #503047;
+          transition: 0.5s ease-in-out;
+          text-transform: capitalize;
+          &:hover {
+            color: #44cf6c;
+          }
+        }
+      }
+      @media screen and (max-width: 945px) {
+        display: none;
+      }
+    }
+  }
+  .app__nav-menu-icon {
+    grid-column: span 3;
+    gap: 0.5rem;
+    justify-self: flex-end;
+    svg {
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: #503047;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        color: #44cf6c;
+      }
+    }
+  }
+  .app__menu-icon {
+    display: none;
+  }
+  @media screen and (max-width: 945px) {
+    .app_nav-menu {
+      grid-column: span 4;
+
+      .app__nav-menu-item {
+        display: none;
+      }
+    }
+    .app__nav-menu-icon {
+      grid-column: span 4;
+      justify-self: normal;
+
+      place-self: center;
+    }
+    .app__menu-icon {
+      display: flex;
+      grid-column: span 3;
+      justify-self: flex-end;
+      svg {
+        font-size: 2rem;
+        cursor: pointer;
+        color: #503047;
+      }
+    }
+    .app__mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      justify-content: center;
+      .app__close {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        svg {
+          font-size: 2rem;
+          cursor: pointer;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+      .app__nav-mobile-menu-item {
+        flex-direction: column;
+        li {
+          margin: 10px 0;
+          a {
+            color: rgba(0, 0, 0, 0.5);
+            text-transform: capitalize;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
